@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação JS</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(182, 94, 255);
+            color: aliceblue;
+        }
+        button{
+           border-radius: 5px;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <h1>Interagindo com um botão</h1>
+    <h3>Clique no gatinho</h3>
+    <br>
+    <button onclick="clicou()"><img src="cat-cute.gif" alt="imagem Gatinho"></button>
+
+    <script>
+        function clicou(){
+            window.alert('Meow: você clicou no gatinho')
+        }
+    </script>
+</body>
+</html>
