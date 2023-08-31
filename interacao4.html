@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <style>
+        body{
+        text-align: center;
+        background-color: rgb(56, 124, 102);
+        color: rgb(138, 226, 197);
+        font-family: cursive;
+        }
+        section{
+        background-color: rgb(70, 173, 125);
+        color: rgb(26, 61, 50);
+        position: absolute;           
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <h1>Java Script</h1>
+    <button onclick="inicío()">Clique Aqui</button>
+    <section id="resultado">
+        <p>O resultado irá aparecer aqui</p>
+    </section>
+    
+    <script>
+        function inicío() {
+            let curso = window.prompt('Qual é o seu curso?')
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>Que legal! Gostei de saber que você estuda ${curso}!`
+        }
+    </script>
+</body>
+</html>
